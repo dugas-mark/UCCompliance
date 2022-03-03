@@ -61,7 +61,7 @@ import urllib3
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 if __name__ == "__main__":
-	# CUCM_PUBS_D = {'10.160.44.132':'FWD-1'}
+	CUCM_PUBS_D = {'10.60.12.134':'MAD-7'}
 	# Supress warnings
 	urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 

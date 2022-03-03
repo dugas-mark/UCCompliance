@@ -211,7 +211,7 @@ def checkStandardPwd(standardOsUserName, standardCcmOsPwd,
 	session = Session()
 	session.verify = False
 	session.auth = HTTPBasicAuth(username, passwd)
-	transport = Transport(session=session, timeout=10)
+	transport = Transport(session=session, timeout=60)
 	settings = Settings(strict=False, xml_huge_tree=True)
 	client = Client(wsdl_url+'AXLAPI.wsdl',
 					settings=settings, transport=transport)
