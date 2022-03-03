@@ -1,0 +1,31 @@
+The Platform Administrative Web services uses the HTTPS Basic Authentication scheme, and all PAWS API calls require authentication.   You can use the account created during installation to authenticate API calls, or you can use the command line interface (CLI) to create a new account for PAWS administration.
+
+ 
+
+To create an account using the CLI, run the following commands:
+
+ 
+
+admin:set account name pawsadmin
+
+ 
+
+Privilege Levels are:
+
+   Ordinary - Level 0
+
+   Advanced - Level 1
+
+ 
+
+Please enter the privilege level :0
+
+  Please enter the password :*******
+
+        re-enter to confirm :*******
+
+Account successfully created
+
+ 
+
+Check the CLI Reference Guide for Unified CM for more information about the command line interface commands.

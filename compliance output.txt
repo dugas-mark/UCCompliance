@@ -1,0 +1,29 @@
+passwordStatus - dict, {'OS':True/False, 'GUI':True/False}
+	OS_Pwd_Status__c txt True/False, GUI_Pwd_Status__c txt True/False
+
+cucmFullVer - str, '12.5.1.11900(146)'
+	Cluster_Version__c
+
+regDevCnt - complex dict, {'Registered': {'Phone': 2054, 'Cti': 593}, 'UnRegistered': {'Phone': 1603, 'Cti': 0}}
+	Phones_Registered__c int, Phones_Unregistered__c int, CTI_Registered__c int, CTI_Unregistered int
+
+ucmClusterID - dict, {'COR-1' : 'Standard'}
+	Cluster_ID__c txt lookup, Cluster_ID_Status__c True/False
+
+ovaSize - str, 'Large'
+	OVA_Size__c txt, Large/non-Standard
+
+cucmPub - str, 'Standard:  CM service is inactive on pub'
+	CM_Service_on_Pub__c, txt True/False
+
+mrglStatus - str, 'All Media Registered'
+	MR_Status__c txt, True/False
+
+cmgLoad - dict, {'SUB1-SUB2-CMG': 8076, 'SUB3-SUB4-CMG': 6213}
+	CMG_Load__c text area
+
+backupStatus - dict, {'Success/Fail/Unavailable':'date of last backup xxxx-xx-xx'}
+	Daily_Backup_Status__c True/False, Last_Backup_Date__c date
+
+cucmLdap - dict 
+	LDAP_Status__c, True/False

@@ -1,0 +1,13 @@
+__pycache__/
+cucm_env*.py
+.vscode
+.env
+htmlcov/
+build/
+dist/
+.venv/
+.vscode/
+*.csv
+*.xlsx
+*.log
+*.zip
