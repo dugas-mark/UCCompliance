@@ -57,7 +57,7 @@ def getRegisteredDeviceCnt(username, passwd, CUCM_IP, WSDL_URL, logger):
 						settings=settings, transport=transport)
 	AXL_service = AXL_client.create_service('{http://www.cisco.com/AXLAPIService/}AXLAPIBinding',
 											f'https://{CUCM_IP}:8443/axl/')
-	# Call Cisco API list.Phone
+	# Call Cisco API listPhone
 	phone_list = AXL_service.listPhone(searchCriteria={'name' : '%'},
 									   returnedTags={'name' : '', 'model' : ''})
 	cti_list = AXL_service.listCtiRoutePoint(searchCriteria={'name' : '%'},
@@ -129,7 +129,7 @@ def checkRegistration(group, devType, regType, model='255'):
 						"DownloadStatus": "Any"
 						}
 						
-	# For devType = Phone and model = 255, pass the list of phone names to SelectItems.
+	# Pass device name list(s) to SelectItems object
 	if model == '255' or model == '73':
 		CmSelectionCriteria['SelectItems']['item']['Item'] = ",".join(group)
 
